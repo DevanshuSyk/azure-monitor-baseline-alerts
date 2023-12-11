@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "contoso"
+      "value": "IS"
     },
     "platformManagementGroup": {
-      "value": "contoso-platform"
+      "value": "IS"
     },
     "IdentityManagementGroup": {
-      "value": "contoso-identity"
+      "value": "IS"
     },
     "managementManagementGroup": {
-      "value": "contoso-management"
+      "value": "IS"
     },
     "connectivityManagementGroup": {
-      "value": "contoso-connectivity"
+      "value": "IS
     },
     "LandingZoneManagementGroup": {
-      "value": "contoso-landingzones"
+      "value": "IS"
     },
     "enableAMBAConnectivity": {
       "value": "Yes"
