@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "IS"
+      "value": "IS-Cloud-Scratch"
     },
     "platformManagementGroup": {
-      "value": "IS"
+      "value": "IS-Cloud-Scratch"
     },
     "IdentityManagementGroup": {
-      "value": "IS"
+      "value": "IS-Cloud-Scratch"
     },
     "managementManagementGroup": {
-      "value": "IS"
+      "value": "IS-Cloud-Scratch"
     },
     "connectivityManagementGroup": {
-      "value": "IS"
+      "value": "IS-Cloud-Scratch"
     },
     "LandingZoneManagementGroup": {
-      "value": "IS"
+      "value": "IS-Cloud-Scratch"
     },
     "enableAMBAConnectivity": {
       "value": "Yes"
@@ -45,7 +45,8 @@
         },
         "ALZMonitorResourceGroupTags": {
           "value": {
-            "Project": "amba-monitoring"
+            "Resource Owner": "Kieran.bennett@stryker.com",
+            "Cost Center": "1392"
           }
         },
         "ALZMonitorResourceGroupLocation": {
@@ -56,7 +57,7 @@
     "policyAssignmentParametersServiceHealth": {
       "value": {
         "ALZMonitorActionGroupEmail": {
-          "value": "action@mail.com"
+          "value": "devanshu.prasad@stryker.com"
         },
         "ResHlthUnhealthyAlertState": {
           "value": "true"
