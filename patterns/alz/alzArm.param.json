@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "IS-Cloud-Scratch"
+      "value": "contoso"
     },
     "platformManagementGroup": {
-      "value": "IS-Cloud-Scratch"
+      "value": "contoso-platform"
     },
     "IdentityManagementGroup": {
-      "value": "IS-Cloud-Scratch"
+      "value": "contoso-identity"
     },
     "managementManagementGroup": {
-      "value": "IS-Cloud-Scratch"
+      "value": "contoso-management"
     },
     "connectivityManagementGroup": {
-      "value": "IS-Cloud-Scratch"
+      "value": "contoso-connectivity"
     },
     "LandingZoneManagementGroup": {
-      "value": "IS-Cloud-Scratch"
+      "value": "contoso-landingzones"
     },
     "enableAMBAConnectivity": {
       "value": "Yes"
@@ -35,6 +35,9 @@
     "enableAMBAServiceHealth": {
       "value": "Yes"
     },
+    "enableAMBANotificationAssets": {
+      "value": "Yes"
+    },
     "telemetryOptOut": {
       "value": "No"
     },
@@ -45,8 +48,7 @@
         },
         "ALZMonitorResourceGroupTags": {
           "value": {
-            "Resource Owner": "Kieran.bennett@stryker.com",
-            "Cost Center": "1392"
+            "Project": "amba-monitoring"
           }
         },
         "ALZMonitorResourceGroupLocation": {
@@ -54,11 +56,46 @@
         }
       }
     },
-    "policyAssignmentParametersServiceHealth": {
+    "policyAssignmentParametersBYON": {
+      "value": {
+        "BYOActionGroup": {
+          "value": ""
+        },
+        "BYOAlertProcessingRule": {
+          "value": ""
+        }
+      }
+    },
+    "policyAssignmentParametersNotificationAssets": {
       "value": {
         "ALZMonitorActionGroupEmail": {
-          "value": "devanshu.prasad@stryker.com"
+          "value": ""
         },
+        "ALZLogicappResourceId": {
+          "value": ""
+        },
+        "ALZLogicappCallbackUrl":{
+          "value": ""
+        },
+        "ALZArmRoleId": {
+          "value": ""
+        },
+        "ALZEventHubResourceId": {
+          "value": ""
+        },
+        "ALZWebhookServiceUri": {
+          "value": ""
+        },
+        "ALZFunctionResourceId": {
+          "value": ""
+        },
+        "ALZFunctionTriggerUrl": {
+          "value": ""
+        }
+      }
+    },
+    "policyAssignmentParametersServiceHealth": {
+      "value": {
         "ResHlthUnhealthyAlertState": {
           "value": "true"
         },
@@ -1043,6 +1080,12 @@
         "StorageAccountAvailabilityThreshold": {
           "value": "90"
         },
+        "StorageAccountDeletePolicyEffect": {
+          "value": "deployIfNotExists"
+        },
+        "StorageAccountDeleteAlertState": {
+          "value": "true"
+        },
         "PIPDDoSAttackAlertSeverity": {
           "value": "1"
         },
@@ -1985,6 +2028,12 @@
         },
         "StorageAccountAvailabilityThreshold": {
           "value": "90"
+        },
+        "StorageAccountDeletePolicyEffect": {
+          "value": "deployIfNotExists"
+        },
+        "StorageAccountDeleteAlertState": {
+          "value": "true"
         },
         "activityLAWDeleteAlertState": {
           "value": "true"
